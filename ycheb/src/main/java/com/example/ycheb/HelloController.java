@@ -169,7 +169,7 @@ public class HelloController implements Initializable {
                 v.setText("'Якитория' по адресу ул. Строилелей 152б");
             }
             if (choice1.equals("суши-бар")) {
-                list2.getItems().addAll("норвегия", "монреаль", "рататуй", "прада");
+                list2.getItems().addAll("норвегия", "монреаль", "рататуй", "прада"); //получение записанных элементов при выборе
                 list2.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
                 l5.setText("370");
                 l6.setText("350");
@@ -185,7 +185,7 @@ public class HelloController implements Initializable {
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        firstList.getItems().addAll("самурай", "фабрика", "республика", "пицца паста", "сушивесла");
+        firstList.getItems().addAll("самурай", "фабрика", "республика", "пицца паста", "сушивесла"); //получение в лист записанных значений
         firstList.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         secondList.getItems().addAll("дайкон", "хо.суши", "автосуши", "якитория", "суши-бар");
         secondList.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
