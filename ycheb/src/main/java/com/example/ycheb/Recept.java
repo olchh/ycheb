@@ -132,7 +132,7 @@ public class Recept {
             Label price = (Label) scene.lookup("#price");
             Label name = (Label) scene.lookup("#name");
 
-            if ((1 + listOfFirst.getSelectionModel().getSelectedIndex()) == 1) {
+            if ((1 + listOfFirst.getSelectionModel().getSelectedIndex()) == 1) { //если выбранный элемент по индеску совпадает с 1 и записывает в переменную р1 и парсит
                 p1 = Integer.parseInt(l1.getText().trim());
             }
             if ((1 + listOfFirst.getSelectionModel().getSelectedIndex()) == 2) {
@@ -159,11 +159,11 @@ public class Recept {
             }
 
             if (p1 > p2) {
-                price.setText(String.valueOf(p2));
+                price.setText(String.valueOf(p2)); //сравнение двух выбранных блюд
                 name.setText(firstPrice.getText());
             } else {
-                price.setText(String.valueOf(p1));
-                name.setText(secondPrice.getText());
+                price.setText(String.valueOf(p1)); //запись цены в label сравненного блюда 
+                name.setText(secondPrice.getText()); //запись адреса
             }
 
             Stage stage = new Stage();
